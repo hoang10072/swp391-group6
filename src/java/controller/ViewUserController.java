@@ -98,14 +98,15 @@ public class ViewUserController extends HttpServlet {
             if (!users.isEmpty()) {
                 out.println("<h3>List of Users:</h3>");
                 out.println("<table border='1'>");
-                out.println("<tr><th>ID</th><th>Name</th><th>Email</th><th>Phone</th><th>Address</th></tr>");
+                out.println("<tr><th>ID</th><th>Phone</th><th>Name</th><th>Password</th><th>Email</th><th>Address</th></tr>");
 
                 for (Customer user : users) {
                     out.println("<tr>");
-                    out.println("<td>" + user.getCustomerID() + "</td>");
-                    out.println("<td>" + user.getCustomerName() + "</td>");
-                    out.println("<td>" + user.getEmail() + "</td>");
+                    out.println("<td>" + user.getCustomerID()+ "</td>");
                     out.println("<td>" + user.getPhone() + "</td>");
+                    out.println("<td>" + user.getCustomerName()+ "</td>");
+                    out.println("<td>" + user.getPassword()+ "</td>");
+                    out.println("<td>" + user.getEmail()+ "</td>");
                     out.println("<td>" + user.getAddress() + "</td>");
                     out.println("</tr>");
                 }

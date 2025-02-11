@@ -27,10 +27,10 @@ public class CustomerDAO {
             while (rs.next()) {
                 Customer customer = new Customer(
                         rs.getInt("customerID"), 
-                        rs.getString("customerName"), 
+                        rs.getString("phone"), 
+                        rs.getString("customerName"),
                         rs.getString("password"),
                         rs.getString("email"),
-                        rs.getString("phone"),
                         rs.getString("address")
                 );
                 customers.add(customer);
