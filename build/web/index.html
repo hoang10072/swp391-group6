@@ -35,7 +35,7 @@
         .banner {
             position: relative;
             width: 100%;
-            max-height: 100%;
+            max-height: 500px;
             overflow: hidden;
         }
         .banner img {
@@ -63,7 +63,9 @@
             text-align: center;
         }
         .movie img {
-            max-width: 100%;
+            width: 100%;
+            height: 300px; /* Ensure all images have the same height */
+            object-fit: cover; /* Ensure images cover the area without distortion */
             border-radius: 10px;
         }
         .movie h3 {
@@ -95,7 +97,7 @@
         <div class="featured-movies">
             <div class="movie">
                 <img src="images/phim1.png" alt="Movie 1">
-                <h3>Movie Title 1</h3>
+                <h3>BỘ TỨ BÁO THỦ</h3>
                 <p>Quốc Anh và Quỳnh Anh yêu nhau đang đến lúc “nhạt”. Nhận ra điều này, 
                     Quỳnh Anh lên kế hoạch hâm nóng mối quan hệ của mình, 
                     với sự quân sư giúp đỡ Bộ tứ thân thiết (Dì 4, Cậu 11, Kiều và Jessica). 
@@ -103,29 +105,29 @@
             </div>
             <div class="movie">
                 <img src="images/phim2.png" alt="Movie 2">
-                <h3>Movie Title 2</h3>
+                <h3>ĐÈN ÂM HỒN</h3>
                 <p>Thương, một người mẹ đơn thân, sống cùng con trai tên là Lĩnh trong một ngôi làng nhỏ.
                     Một ngày, Lĩnh nhặt được một cây đèn cũ và bắt đầu xem cái bóng người của bản thân mình trên tường là cha của mình.
                     Ban đầu cứ nghĩ chỉ là trò đùa của trẻ con nên không có chuyện gì đáng nói, nhưng sau đó, những hiện tượng rùng rợn liên tục</p>
             </div>
             <div class="movie">
                 <img src="images/phim3.jpg" alt="Movie 3">
-                <h3>Movie Title 3</h3>
+                <h3>VÙNG ĐẤT LINH HỒN</h3>
                 <p>Một bộ phim hành động đầy kịch tính khiến bạn không thể rời mắt khỏi màn hình.</p>
             </div>
             <div class="movie">
                 <img src="images/phim4.jpg" alt="Movie 4">
-                <h3>Movie Title 4</h3>
+                <h3>GẤU THỦ CHU DU</h3>
                 <p>Một bộ phim hài hước sẽ khiến bạn cười từ đầu đến cuối.</p>
             </div>
             <div class="movie">
                 <img src="images/phim5.jpg" alt="Movie 5">
-                <h3>Movie Title 5</h3>
+                <h3>LÀM GIÀU VỚI MA</h3>
                 <p>Một bộ phim tâm lý cảm động khám phá những phức tạp của mối quan hệ con người.</p>
             </div>
             <div class="movie">
                 <img src="images/phim6.jpg" alt="Movie 6">
-                <h3>Movie Title 6</h3>
+                <h3>NOAH'S ARK</h3>
                 <p>Một bộ phim khoa học viễn tưởng đưa bạn đến những thế giới xa xôi và hơn thế nữa.</p>
             </div>
         </div>
@@ -144,7 +146,7 @@
             images[currentIndex].classList.add('active');
         }
 
-        setInterval(showNextImage, 3000); // Change image every 3 seconds
+        setInterval(showNextImage, 3000); 
     </script>
 </body>
 </html>
